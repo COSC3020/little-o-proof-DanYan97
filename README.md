@@ -28,3 +28,9 @@ Let $C=1$, then we have $f(n)<g(n)$, this implies $f(n)\leq1*g(n)$ for all $n\ge
 
 Since $f(n)\leq Cg(n)$ for $C=1$ with the approprate $n_0$. Thus $f(n)\in o(g(n))$ implies
 $f(n)\in O(g(n))$
+
+“I certify that I have listed all sources used to complete this exercise,
+ including the use of any Large Language Models. 
+ All of the work is my own, except where stated otherwise. 
+ I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, 
+ charges may be filed against me without prior notice.” --Doris Yan
