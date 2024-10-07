@@ -16,3 +16,20 @@ page](https://docs.github.com/en/get-started/writing-on-github/working-with-adva
 might help with the notation for mathematical expressions.
 
 $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
+
+$f(n)\in O(g(n)) \iff \exists C>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(n)$
+
+1. Assume $f(n)\in o(g(n))$. By definition, for any $c>0$, there exists an $n_0$ such that for all
+$n\ge n_0$, $f(n)<g(n)$
+
+2. Let $c=1$, then there exists an $n_0$ such that for all $n \ge n_0$, $f(n)<1*g(n)=g(n)$
+
+3. From step 2, we have $f(n)<g(n)$ for all $n\ge n_0$, this implies $f(n)\leq1*g(n)$ for all $n\ge n_0$.
+
+4. Thus $f(n)\in o(g(n))$ implies $f(n)\in O(g(n))$
+
+“I certify that I have listed all sources used to complete this exercise,
+ including the use of any Large Language Models. 
+ All of the work is my own, except where stated otherwise. 
+ I am aware that plagiarism carries severe penalties and that if plagiarism is suspected, 
+ charges may be filed against me without prior notice.” --Doris Yan
