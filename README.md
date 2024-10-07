@@ -19,15 +19,14 @@ $f(n)\in o(g(n)) \iff \forall c>0, \exists n_0, \forall n\ge n_0: f(n) < c g(n)$
 
 $f(n)\in O(g(n)) \iff \exists C>0, \exists n_0, \forall n\ge n_0: f(n) \leq c g(n)$
 
-Assume $f(n)\in o(g(n))$. By definition, for any $c>0$, there exists an $n_0$ such that for all
+1. Assume $f(n)\in o(g(n))$. By definition, for any $c>0$, there exists an $n_0$ such that for all
 $n\ge n_0$, $f(n)<g(n)$
 
-Let $c=1$, then there exists an $n_0$ such that for all $n \ge n_0$, $f(n)<g(n)$
+2. Let $c=1$, then there exists an $n_0$ such that for all $n \ge n_0$, $f(n)<1*g(n)=g(n)$
 
-Let $C=1$, then we have $f(n)<g(n)$, this implies $f(n)\leq1*g(n)$ for all $n\ge n_0$
+3. From step 2, we have $f(n)<g(n)$ for all $n\ge n_0$, this implies $f(n)\leq1*g(n)$ for all $n\ge n_0$.
 
-Since $f(n)\leq Cg(n)$ for $C=1$ with the approprate $n_0$. Thus $f(n)\in o(g(n))$ implies
-$f(n)\in O(g(n))$
+4. Thus $f(n)\in o(g(n))$ implies $f(n)\in O(g(n))$
 
 “I certify that I have listed all sources used to complete this exercise,
  including the use of any Large Language Models. 
